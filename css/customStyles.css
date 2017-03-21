@@ -1,0 +1,8 @@
+
+.myPicture {
+  content: url('../images/normal_me.jpg');
+}
+
+.myPicture:hover {
+  content: url('../images/surprised_me.jpg');
+}
