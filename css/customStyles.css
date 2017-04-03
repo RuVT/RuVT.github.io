@@ -1,3 +1,22 @@
+/* As hex codes */
+.color-primary-0 { color: #008AAA }	/* Main Primary color */
+.color-primary-1 { color: #000000 }
+.color-primary-2 { color: #005367 }
+.color-primary-3 { color: #06CEFD }
+.color-primary-4 { color: #A0EDFF }
+
+/* As RGBa codes */
+.rgba-primary-0 { color: rgba(  0,138,170,1) }	/* Main Primary color */
+.rgba-primary-1 { color: rgba(  0,  0,  0,1) }
+.rgba-primary-2 { color: rgba(  0, 83,103,1) }
+.rgba-primary-3 { color: rgba(  6,206,253,1) }
+.rgba-primary-4 { color: rgba(160,237,255,1) }
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
 .myPicture {
   content: url('../images/normal_me.jpg');
@@ -8,16 +27,16 @@
 }
 
 .container {
-  background: #37c837;
+  background: #008AAA;
 }
 
 body {
   
-  background: #37c837; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #37c837, #98ec16);
-  background: -moz-linear-gradient(right, #37c837, #98ec16);
-  background: -o-linear-gradient(right, #37c837, #98ec16);
-  background: linear-gradient(to left, #37c837, #98ec16); /* Chrome 10-25, Safari 5.1-6 */
+  background: #226666; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #226666, #226666);
+  background: -moz-linear-gradient(right, #226666, #226666);
+  background: -o-linear-gradient(right, #226666, #226666);
+  background: linear-gradient(to left, #226666, #226666); /* Chrome 10-25, Safari 5.1-6 */
  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
         
