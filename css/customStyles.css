@@ -1,8 +1,81 @@
+/*=============================================
+=            COLOR PALETTE            =
+=============================================*/
+
+/* As hex codes */
+.background-color-0 { background-color: #008AAA }	/* Main Primary color */
+.background-color-1 { background-color: #000000 }
+.background-color-2 { background-color: #005367 }
+.background-color-3 { background-color: #06CEFD }
+.background-color-4 { background-color: #A0EDFF }
+
+/* As RGBa codes */
+.rgba-primary-0 { color: rgba(  0,138,170,1) }	/* Main Primary color */
+.rgba-primary-1 { color: rgba(  0,  0,  0,1) }
+.rgba-primary-2 { color: rgba(  0, 83,103,1) }
+.rgba-primary-3 { color: rgba(  6,206,253,1) }
+.rgba-primary-4 { color: rgba(160,237,255,1) }
+
+/*=====  End of COLOR PALETTE  ======*/
+
+
+/*=============================================
+=            Navigation menu            =
+=============================================*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: fixed;
+}
+
+li {
+    float: left;
+    margin: 0;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+@media (min-width: 750px) {
+    
+}
+
+
+/*=====  End of Navigation menu  ======*/
 
 .myPicture {
   content: url('../images/normal_me.jpg');
+  /*vertical-align: middle;*/
 }
 
 .myPicture:hover {
   content: url('../images/surprised_me.jpg');
 }
+
+
+/*=============================================
+=            logo            =
+=============================================*/
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+/*=====  End of logo  ======*/
+
+
+
