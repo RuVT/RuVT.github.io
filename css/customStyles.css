@@ -58,6 +58,7 @@ li a:hover {
 
 .myPicture {
   content: url('../images/normal_me.jpg');
+  /*vertical-align: middle;*/
 }
 
 .myPicture:hover {
