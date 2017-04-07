@@ -23,7 +23,7 @@
 =            Navigation menu            =
 =============================================*/
 
-ul {
+#navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -31,12 +31,12 @@ ul {
     margin-top: fixed;
 }
 
-li {
+#navigation ul li {
     float: left;
     margin: 0;
 }
 
-li a {
+#navigation ul li a {
     display: block;
     color: white;
     text-align: center;
