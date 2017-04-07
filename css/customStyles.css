@@ -9,6 +9,13 @@
 .background-color-3 { background-color: #06CEFD }
 .background-color-4 { background-color: #A0EDFF }
 
+.background-color-5 { background-color: #A7C2FF }	/* Main Primary color */
+.background-color-6 { background-color: #FFFFFF }
+.background-color-7 { background-color: #DCE6FF }
+.background-color-8 { background-color: #7EA5FF }
+.background-color-9 { background-color: #5588FD }
+.background-color-10 { background-color: #456990 }
+
 /* As RGBa codes */
 .rgba-primary-0 { color: rgba(  0,138,170,1) }	/* Main Primary color */
 .rgba-primary-1 { color: rgba(  0,  0,  0,1) }

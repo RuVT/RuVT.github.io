@@ -55,7 +55,7 @@
 }
 
 .timeline ul li:nth-child(even) div {
-  left: -439px;
+  left: -470px;
 }
 
 .timeline ul li:nth-child(even) div::before {
@@ -122,7 +122,7 @@ time {
     margin-left: 20px;
   }
   .timeline ul li div {
-    width: calc(100vw - 91px);
+    width: calc(100vw - 50px);
   }
   .timeline ul li:nth-child(even) div {
     left: 45px;
