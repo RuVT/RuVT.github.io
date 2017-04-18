@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/customStyles.css">
+  <link rel="stylesheet" href="lib/aos/dist/aos.css"
   <!--<link rel="stylesheet" href="css/timeline.css">-->
 
   <!-- Favicon
@@ -79,11 +80,13 @@
   <section class="container timeline">
     <div class="twelve columns timeline-item">
       <div class="timeline-dot"></div>
-      <time>Sep. 2014</time>
-      <div class="row">
-        <p class="one-half column">
-          Started as middle time desktop developer in Delta Trade Solutions.
-        </p>
+      <div class="row" data-aos="fade-left">
+        <div class="one-half column">
+          <time>Sep. 2014</time>
+          <p>
+            Started as middle time desktop developer in Delta Trade Solutions.
+          </p>
+        </div>
         <img class="one-half column left u-max-full-width" src="images/delta1.jpg" alt="">
       </div>
     </div>
@@ -187,6 +190,13 @@
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="lib/aos/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+
 </body>
 <!--<script src="js/timeline.js"></script>-->
 </html>
