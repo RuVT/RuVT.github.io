@@ -85,6 +85,9 @@ li a:hover {
 /*=====  End of logo  ======*/
 
 
+/*=============================================
+=            Timeline            =
+=============================================*/
 .timeline {
     padding-left: 15px;     /*PA (Padding A)*/
 }
@@ -114,3 +117,8 @@ li a:hover {
     margin-bottom:auto; 
     margin-left:-25px;    /*-(PB+15)*/
 }
+
+/*=====  End of Timeline  ======*/
+
+
+
