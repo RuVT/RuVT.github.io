@@ -85,4 +85,32 @@ li a:hover {
 /*=====  End of logo  ======*/
 
 
+.timeline {
+    padding-left: 15px;     /*PA (Padding A)*/
+}
 
+.timeline-item {
+    border-style: none none none solid;
+    border-color: #005367;
+    border-width: 20px;
+    padding-left: 15px;     /*PB (Padding B)*/
+    position: inherit;  /*This have to be inherit so I can place the circle*/
+    padding: 10px;
+}
+
+.timeline-dot {
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background: #456990;
+    border-width: 2px;
+    position:absolute; 
+    top:0;
+    bottom:0; 
+    left: 0;
+    margin-top:auto; 
+    margin-bottom:auto; 
+    margin-left:-25px;    /*-(PB+15)*/
+}
