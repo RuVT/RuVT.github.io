@@ -9,6 +9,13 @@
 .background-color-3 { background-color: #06CEFD }
 .background-color-4 { background-color: #A0EDFF }
 
+.background-color-5 { background-color: #A7C2FF }	/* Main Primary color */
+.background-color-6 { background-color: #FFFFFF }
+.background-color-7 { background-color: #DCE6FF }
+.background-color-8 { background-color: #7EA5FF }
+.background-color-9 { background-color: #5588FD }
+.background-color-10 { background-color: #456990 }
+
 /* As RGBa codes */
 .rgba-primary-0 { color: rgba(  0,138,170,1) }	/* Main Primary color */
 .rgba-primary-1 { color: rgba(  0,  0,  0,1) }
@@ -23,7 +30,7 @@
 =            Navigation menu            =
 =============================================*/
 
-ul {
+#navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -31,12 +38,12 @@ ul {
     margin-top: fixed;
 }
 
-li {
+#navigation ul li {
     float: left;
     margin: 0;
 }
 
-li a {
+#navigation ul li a {
     display: block;
     color: white;
     text-align: center;
@@ -76,6 +83,42 @@ li a:hover {
 }
 
 /*=====  End of logo  ======*/
+
+
+/*=============================================
+=            Timeline            =
+=============================================*/
+.timeline {
+    padding-left: 15px;     /*PA (Padding A)*/
+}
+
+.timeline-item {
+    border-style: none none none solid;
+    border-color: #005367;
+    border-width: 20px;
+    padding-left: 15px;     /*PB (Padding B)*/
+    position: inherit;  /*This have to be inherit so I can place the circle*/
+    padding: 10px;
+}
+
+.timeline-dot {
+    width: 30px;
+    height: 30px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background: #456990;
+    border-width: 2px;
+    position:absolute; 
+    top:0;
+    bottom:0; 
+    left: 0;
+    margin-top:auto; 
+    margin-bottom:auto; 
+    margin-left:-25px;    /*-(PB+15)*/
+}
+
+/*=====  End of Timeline  ======*/
 
 
 
