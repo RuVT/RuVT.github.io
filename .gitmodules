@@ -1,0 +1,3 @@
+[submodule "lib/aos"]
+	path = lib/aos
+	url = https://github.com/michalsnik/aos.git
