@@ -65,7 +65,6 @@ li a:hover {
 
 .myPicture {
   content: url('../images/normal_me.jpg');
-  /*vertical-align: middle;*/
 }
 
 .myPicture:hover {
@@ -80,6 +79,12 @@ li a:hover {
 #logo {
     width: 50px;
     height: 50px;
+    position: inherit;
+}
+
+#logo img {
+    width: 50px;
+    height: 50px;
 }
 
 /*=====  End of logo  ======*/
@@ -89,15 +94,11 @@ li a:hover {
 =            Timeline            =
 =============================================*/
 .timeline {
-    padding-left: 15px;     /*PA (Padding A)*/
+    /*padding-left: 15px;     /*PA (Padding A)*/
 }
 
 .timeline-item {
-    border-style: none none none solid;
-    border-color: #005367;
-    border-width: 20px;
-    padding-left: 15px;     /*PB (Padding B)*/
-    position: inherit;  /*This have to be inherit so I can place the circle*/
+    /*position: inherit;  /*This have to be inherit so I can place the circle*/
     padding: 10px;
 }
 
@@ -119,6 +120,23 @@ li a:hover {
 }
 
 /*=====  End of Timeline  ======*/
+
+
+/*=============================================
+=            Description            =
+=============================================*/
+
+.description p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.description h3 {
+    margin: 10px;
+    text-align: center;
+}
+
+/*=====  End of Description  ======*/
 
 
 
