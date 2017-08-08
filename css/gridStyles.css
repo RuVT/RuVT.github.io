@@ -23,12 +23,16 @@
 .rgba-primary-3 { color: rgba(  6,206,253,1) }
 .rgba-primary-4 { color: rgba(160,237,255,1) }
 
-/*=====  End of COLOR PALETTE  ======*/
-
-header{
+/*======== Menu Bar =========*/
+#menu{
     display: grid;
-    grid-template-columns: 64px [rest];
+    grid-template-columns: 64px auto auto auto auto;
     grid-template-rows: 64px;
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 #logo{
@@ -40,26 +44,74 @@ header{
     max-height: 100%;
 }
 
-#navbar{
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-#navbar ul{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 100%;
-    list-style-type: none;
-}
-
-#navbar ul li{
+#menu li{
     grid-auto-flow: column;
+    display: block;
 }
 
-#navbar ul li a {
-    display: block;
+#menu li a {
+    display: flex;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
+    height: 100%;
+    width: 100%;
 }
+
+#menu li a:hover {
+    background-color: #111;
+}
+
+@media screen and (max-width: 480px) {
+    #menu{
+        grid-template-columns: 100%;
+        grid-template-rows: 32px auto;
+    }
+
+    #logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*======== Quick Intro =========*/
+.quick-intro{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0px;
+    grid-template-areas: 
+        "title          image"
+        "quick-desc     image"
+        "extra-info-1   extra-info-2";
+                        
+}
+
+#title{
+    grid-area: title;
+    font-size: 4vw;
+}
+
+#quick-desc{
+    margin: 0px;
+    font-size: 3vw;
+    grid-area: quick-desc;
+}
+
+#my-picture{
+    grid-area: image;
+    max-width: 100%;
+}
+
+#extra-info-1{
+    grid-area: extra-info-1;
+    font-size: 3vw;
+}
+
+#extra-info-2{
+    grid-area: extra-info-2;
+    font-size: 3vw;
+}
+
+
