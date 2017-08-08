@@ -1,0 +1,65 @@
+/*=============================================
+=            COLOR PALETTE            =
+=============================================*/
+
+/* As hex codes */
+.background-color-0 { background-color: #008AAA }	/* Main Primary color */
+.background-color-1 { background-color: #000000 }
+.background-color-2 { background-color: #005367 }
+.background-color-3 { background-color: #06CEFD }
+.background-color-4 { background-color: #A0EDFF }
+
+.background-color-5 { background-color: #A7C2FF }	/* Main Primary color */
+.background-color-6 { background-color: #FFFFFF }
+.background-color-7 { background-color: #DCE6FF }
+.background-color-8 { background-color: #7EA5FF }
+.background-color-9 { background-color: #5588FD }
+.background-color-10 { background-color: #456990 }
+
+/* As RGBa codes */
+.rgba-primary-0 { color: rgba(  0,138,170,1) }	/* Main Primary color */
+.rgba-primary-1 { color: rgba(  0,  0,  0,1) }
+.rgba-primary-2 { color: rgba(  0, 83,103,1) }
+.rgba-primary-3 { color: rgba(  6,206,253,1) }
+.rgba-primary-4 { color: rgba(160,237,255,1) }
+
+/*=====  End of COLOR PALETTE  ======*/
+
+header{
+    display: grid;
+    grid-template-columns: 64px [rest];
+    grid-template-rows: 64px;
+}
+
+#logo{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#logo img{
+    max-height: 100%;
+}
+
+#navbar{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#navbar ul{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    list-style-type: none;
+}
+
+#navbar ul li{
+    grid-auto-flow: column;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
