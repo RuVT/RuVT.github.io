@@ -23,6 +23,11 @@
 .rgba-primary-3 { color: rgba(  6,206,253,1) }
 .rgba-primary-4 { color: rgba(160,237,255,1) }
 
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 /*======== Menu Bar =========*/
 #menu{
     display: grid;
@@ -79,12 +84,12 @@
 /*======== Quick Intro =========*/
 .quick-intro{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 0px;
+    grid-template-columns: auto 5% auto;
     grid-template-areas: 
-        "title          image"
-        "quick-desc     image"
-        "extra-info-1   extra-info-2";
+        "title          ..  image"
+        "quick-desc     ..  image"
+        "extra-info-1   ..  extra-info-2";
+    padding: 10px;
                         
 }
 
@@ -114,4 +119,104 @@
     font-size: 3vw;
 }
 
+@media screen and (max-width: 480px){
+    .quick-intro{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 0px;
+        grid-template-areas: 
+            "title"
+            "quick-desc"
+            "image"
+            "extra-info-1"
+            "extra-info-2";  
+    }
+    
+    #title{
+        font-size: 6vw;
+    }
 
+    #quick-desc{
+        font-size: 5vw;
+        grid-area: quick-desc;
+    }
+
+    #my-picture{
+        grid-area: image;
+        max-width: 100%;
+    }
+
+    #extra-info-1{
+        grid-area: extra-info-1;
+        font-size: 4vw;
+    }
+
+    #extra-info-2{
+        grid-area: extra-info-2;
+        font-size: 4vw;
+    }
+}
+
+/*======== Timeline =========*/
+.timeline{
+    display: grid;
+    grid-template-columns: 64px auto;
+    grid-template-areas: 
+        "timeline description"
+        "timeline description"
+        "timeline description"
+        "timeline description"
+        "timeline description"
+        "timeline description";
+}
+
+.timeline div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+        "date           image"
+        "description    image";
+    grid-column: 2 / 3;
+    grid-auto-flow: row;
+    margin: 10px;
+}
+
+.timeline div time{
+    grid-area: date;
+    font-size: 2vw;
+}
+
+.timeline div p{
+    grid-area: description;
+    font-size: 3vw;
+}
+
+.timeline div img{
+    grid-area: image;
+    max-width: 100%;
+}
+
+.timeline div iframe{
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 480px){
+    .timeline div{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "date"
+            "description"
+            "image";
+    }
+    
+    .timeline div time{
+        font-size: 3vw;
+    }
+
+    .timeline div p{
+        font-size: 4vw;
+    }
+}
