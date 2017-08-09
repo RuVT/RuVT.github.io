@@ -179,7 +179,7 @@ body{
         "....       description    image";
     grid-column: 1 / 3;
     margin: 10px;
-    z-index: 1;
+    z-index: 3;
 }
 
 .item-1{
@@ -223,7 +223,10 @@ body{
     grid-area: bookmark;
     max-width: 40px;
     align-content: center;
-    content: url('../images/bookmark-outline.png');
+    background-image: url('../images/bookmark-outline.png');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center top;
 }
 
 #line{
