@@ -3,7 +3,7 @@
   'use strict';
 
   // define variables
-  var items = document.querySelectorAll(".timeline li");
+  var items = document.querySelectorAll("header");
 
   // check if an element is in viewport
   // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
@@ -19,8 +19,11 @@
 
   function callbackFunc() {
     for (var i = 0; i < items.length; i++) {
-      if (isElementInViewport(items[i])) {
-        items[i].classList.add("in-view");
+      if (!isElementInViewport(items[i])) {
+        items[i].classList.add("fixed-menu");
+      }
+      else{
+        items[i].classList.remove("fixed-menu");
       }
     }
   }
