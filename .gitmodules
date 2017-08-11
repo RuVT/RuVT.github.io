@@ -1,6 +1,0 @@
-[submodule "lib/aos"]
-	path = lib/aos
-	url = https://github.com/michalsnik/aos.git
-[submodule "lib/Skeleton"]
-	path = lib/Skeleton
-	url = https://github.com/dhg/Skeleton.git
