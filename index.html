@@ -21,9 +21,9 @@
 </head>
 <body class="background-color-5">
   <!-- Primary Page Layout –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<header class="background-color-2">
+<header>
   <nav id="navbar">
-    <ul id="menu">
+    <ul id="menu" class="background-color-2">
       <a id="logo" class="two columns" href="./index.html">
         <img src="images/tiny-icon.png">
       </a>
@@ -57,36 +57,39 @@
   </section>
 
   <section class="timeline background-color-7">
-    <div class="item-1">
+    <div class="item" style="grid-row: 1 / 2;">
       <img class="bookmark">
       <time>Sep. 2014</time>
-      <p>Started as middle time desktop developer in Delta Trade Solutions.</p>
+      <p>
+        Started as middle time desktop developer in Delta Trade Solutions.</br>
+        <span>More.</span>
+      </p>
       <img src="images/delta1min.png" alt="">
     </div>
-    <div class="item-2">
+    <div class="item" style="grid-row: 2 / 3;">
       <img class="bookmark">
       <time>Sep. 2015</time>
       <p>Enter in Sonata Services as part of the Dual Program between the university and the company.</p>
       <img src="images/sonata1min.jpg" alt="">
     </div>
-    <div class="item-3">
+    <div class="item" style="grid-row: 3 / 4;">
       <img class="bookmark">
       <time>May. 2016</time>
       <p>Working with the Emotiv Headset</p>
       <iframe src="https://www.youtube.com/embed/5jCBEIx6NSI" frameborder="0" allowfullscreen></iframe>
     </div>
-    <div class="item-4">
+    <div class="item" style="grid-row: 4 / 5;">
       <img class="bookmark">
       <time>Jul. 2016</time>
       <p>Working with the Unity3D to make a VR Anatomy Visualization App using Google Cardboard</p>
       <iframe src="https://www.youtube.com/embed/JnezmTF4Gvw" frameborder="0" allowfullscreen></iframe>
     </div>
-    <div class="item-5">
+    <div class="item" style="grid-row: 5 / 6;">
       <img class="bookmark">
       <time>Sep. 2016</time>
       <p>Return to Delta Trade Solutions</p>
     </div>
-    <div class="item-6">
+    <div class="item" style="grid-row: 6 / 7;">
       <img class="bookmark">
       <time>May. 2017</time>
       <p>I gave a lecture in the BitCenter to talk about how to work with the Emotiv Headset to create games in Unity3D.</p>
@@ -94,6 +97,10 @@
     </div>
     <span id="line" class="background-color-2"/>
   </section>
-  <script src="js/timeline.js"></script>
+  <modal title="">
+  </modal>
+   <script src="lib/velocity.min.js"></script> 
+   <script src="js/timeline.js"></script> 
+   <script src="js/fix_menu.js"> </script> 
 </body>
 </html>
